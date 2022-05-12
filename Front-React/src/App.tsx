@@ -1,15 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-import { ChatCustomization } from './Chat';
-
-import logo from './Chat/assets/logo.svg';
 import Header from './Header';
+import RoutaPublica from './Routes/public';
 
-function App() { 
+function App() {
+  const [TitlePagina, setTitlePagina] = useState<any>('');
+
+  console.log(" ==>>",TitlePagina);
+
   return (
     <>
-      <Header title='' />        
-      <ChatCustomization />
+      <Header TitlePagina={TitlePagina}/>
+      <RoutaPublica setTitlePagina={setTitlePagina}/>
     </>
   );
 }

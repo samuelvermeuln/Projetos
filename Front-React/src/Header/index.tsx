@@ -3,15 +3,15 @@ import { Helmet } from 'react-helmet';
 
 
 interface Props {
-    title?: string;
+    TitlePagina?: string;
 }
 
-export default function Header({title}: Props) {
+export default function Header({TitlePagina}: Props) {
     return (
         <>
             <Helmet>
                 <html lang="pt-BR" />
-                <title>{title}</title>
+                <title>{TitlePagina}</title>
                 {/* <link rel="apple-touch-icon" href={logo} /> */}
                 <meta name="description" content="App Description" />
                 <meta name="theme-color" content="#008f68" />
