@@ -1,5 +1,5 @@
 @import '/src/styles/Components/DataView/DataView.scss';
-
+@import '/src/styles/Components/Menubar/Menubar.scss';
 
 *{
     margin:0;
@@ -11,10 +11,24 @@ html, body, #root {
     height:100%;
 }
 
-
 *, button, input {
     border: 0;
     outline:0;
 
+    overflow-x: hidden;
+
+
     font-family: 'Roboto', sans-serif;
+}
+
+.col-12:hover{
+    -webkit-box-shadow: -1px 2px 15px 3px rgba(0,0,0,0.48); 
+    box-shadow: -1px 2px 15px 3px rgba(0,0,0,0.48);
+}
+
+.product-grid-item-content{
+    img{
+        max-width: 40%;
+        max-height: 40%;
+    }
 }
